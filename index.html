@@ -1,9 +1,124 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Prima mea pagina.</title>
-    </head>
-    <body>
-        <p>Maya e foarte creizi.</p>
-    </body>
+<html lang="ro">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemul Solar</title>
+    <style>
+        body {
+            background-color: #060811;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+      
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+            radial-gradient(1px 1px at 25px 50px, white, rgba(255,255,255,0)),
+            radial-gradient(1px 1px at 75px 150px, white, rgba(255,255,255,0)),
+            radial-gradient(1.5px 1.5px at 150px 300px, white, rgba(255,255,255,0)),
+            radial-gradient(2px 2px at 250px 450px, white, rgba(255,255,255,0));
+            background-size: 550px 550px;
+            opacity: 0;
+            z-index: -1; 
+            animation: steleCazatoare 5s linear infinite;
+        }
+        @keyframes steleCazatoare {
+            0% {
+            transform: translate(0, 0) rotate(-45deg);
+           opacity: 5;
+        }
+        10% {
+        opacity: 0;
+        }
+        20% {
+        transform: translate(100vw, 100vh) rotate(-45deg);
+        opacity: 0;
+        }
+        100% {
+        transform: translate(100vw, 100vh) rotate(-45deg);
+        opacity: 0;
+        }
+    }
+        h1, h2, h3 {
+            color: rgb(108, 108, 153);
+            text-align: center;
+        }
+        .planete_container .continut {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .planete_container:nth-child(even) .continut {
+            flex-direction: row-reverse;
+        }
+        .planete_container.planete_container:nth-child(even) .continut p {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+        .continut img {
+            width: 350px;
+            border-radius: 10px;
+            border: 2px solid white;
+            flex-shrink: 0;
+        }
+        .continut p {
+            margin: 0;
+            line-height: 1.6;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explorarea Sistemului Solar</h1>
+    </header>
+    <main>
+        <section id="introducere">
+            <h2>Sistemul Solar, bazele</h2>
+            <p>Sistemul solar se compune din Soare și opt planete : Mercur, Venus, Terra (Pământul), Marte, Jupiter, Saturn, Uranus și Neptun. Pluto era considerată și ea o planetă până în 2006, când definiția standardizată de International Astronomical Union a clasificat-o drept subplanetă.
+                În sens general, o stea împreună cu alte obiecte cerești ce gravitează în jurul său se numește sistem stelar, termenul de solar referindu-se strict la steaua numită Soare (din lat. Sol).
+            </p>
+        </section>
+        <article class="planete_container">
+            <h3>Mercur</h3>
+            <div class="continut">
+                <img src="https://imgs.search.brave.com/Pl_R1Wx5Ky7C8Ql6odvSLG3oEhazkp51W7TqSOHqslM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMzA2/NzY3Mi9waG90by90/aGUtcGxhbmV0LW1l/cmN1cnktdGhlLW5l/YXJlc3QtcGxhbmV0/LXRvLXRoZS1zdW4t/YXMtc2Vlbi1mcm9t/LXRoZS1leHBsb3Jh/dG9yeS1zcGFjZWNy/YWZ0LW1hcmluZXIu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PTNwMXUxZ2haYkNQ/MDJoYl9majV2NUJ4/VkE3NHNyZ3VxZ1hV/NXJlUV8zM2M9" alt="imagine_cu_planeta_Mercur">
+                <p>Mercur este prima planetă a Sistemului Solar, cea mai apropiată de Soare. În mitologia romană, Mercur este zeul-mesager, solul lumii divine. Mișcarea de revoluție, în jurul Soarelui, durează 88 de zile, iar cea de rotație, în jurul propriei axe, circa 59 de zile. Este alcătuită predominant din fier(54%), fiind caracterizată ca o planetă metalică. Apropierea de Soare și culoarea închisă, dată de metalele din care este alcătuită, fac ca temperatura la suprafața planetei, expusă radiației solare, să atingă valori de +430°C, pe când pe fața umbrită a planetei temperatura scade la -100°C. Planeta s-a format cu aproape 4,5 miliarde de ani în urmă, o dată cu întregul Sistem Solar, iar relieful este foarte asemănător cu cel lunar, craterele lăsate de impactul meteoriților cu suprafața planetei fiind numeroase.</p> 
+            </div>
+        </article>
+        <article class="planete_container">
+            <h3>Venus</h3>
+            <div class="continut">
+                <img src="https://imgs.search.brave.com/3vSKKN8AIZTD--0xPwbueKD73SS2vbCHq4L7A5B_d-M/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudG9kYW1hdGVy/aWEuY29tLmJyL3Vw/bG9hZC9zaC91dC9z/aHV0dGVyc3RvY2sx/NzE2NjY4ODA5LWNr/ZS5qcGc" alt="imagine_cu_planeta_Venus">
+                <p>Venus este a doua planetă ca distanță față de Soare în sistemul nostru solar. Situată la 108 milioane km de Soare, Venus își parcurge orbita în 224,7 de zile.[3] Rotația în jurul propriei sale axe este foarte lentă, durează 243 de zile și are loc de la vest la est, în sens invers față de rotația celorlalte planete. Cu un diametru de 12.100 km, Venus este, ca poziție, a doua planetă (pornind de la Soare) din sistemul solar, orbita sa fiind cuprinsă între cea a planetelor Mercur și Pământ. Venus este cu foarte puțin mai mică decât Pământul, dar atmosfera sa este foarte diferită: în principal, aceasta este compusă din 96 % gaz carbonic și 3,5 % azot. Ea este înconjurată de un văl gros de nori repartizați în trei straturi situate la o altitudine între 50 și 70 km. Unii dintre aceștia provoacă ploi de acid sulfuric, o substanță foarte agresivă chimic. Pe Venus temperatura este foarte ridicată. De fapt, gazul carbonic acumulat în atmosferă acționează sub efectul razelor Soarelui ca geamurile unei sere: temperatura la sol ajunge până 460 °C. Suprafața planetei Venus este plină de platouri vulcanice, circa 80 % având o variație a înălțimii nu mai mare de 1 km. Se pare că mulți vulcani sunt încă activi. La fel ca și Mercur, Venus nu are sateliți.</p>
+            </div>
+        </article>
+        <article class="planete_container">
+            <h3>Terra</h3>
+            <div class="continut">
+                <img src="https://imgs.search.brave.com/ZUMokL4EswvoigUpiQnxa0jjiw4d0Y95FOkFLbhwymE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMi8w/NC8xNi8xMC80NC9l/YXJ0aC03MTM2MDY1/XzY0MC5qcGc" alt="imagine_cu_planeta_Terra">
+                <p>Pământul (de asemenea și Terra; 1 UA de la Soare) este cea mai mare și cea mai densă planetă interioară, singura despre care se cunoaște la momentul actual că este geologic activă și singurul loc din Sistemul Solar unde se cunoaște că există viață.[77] Hidrosfera sa lichidă este unică printre planetele terestre, iar Terra este singura planetă unde au fost observate plăci tectonice. Atmosfera Pământului diferă radical față de cea a altor planete, fiind schimbată de prezența vieții și conținând aproximativ 21 % de oxigen liber. Planeta Pământ are doar un satelit natural, Luna, care este singurul satelit mare al unei planete telurice din Sistemul Solar.</p>
+            </div>
+        </article>
+        <article class="planete_container">
+            <h3>Marte</h3>
+            <div class="continut">
+            <img src="https://imgs.search.brave.com/lw-H1nhqSDUpv-3InTM3bMK-1OgoLTUwSt1ipYbjRLE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNzUv/MjEwLzkyMS9zbWFs/bC9wbGFuZXQtbWFy/cy1pbi1vdXRlci1z/cGFjZS1waG90by5q/cGc" alt="imagine_cu_planeta_Marte">
+            <p>Marte este a patra planetă de la Soare și penultima ca mărime din Sistemul Solar. Marte poartă numele zeului roman al războiului și este adesea denumită Planeta Roșie, deoarece oxidul de fier predominant pe suprafața sa îi conferă un aspect roșiatic distinctiv între corpurile astronomice vizibile cu ochiul liber.[18] Marte este o planetă telurică cu o atmosferă subțire, având caracteristici de suprafață care amintesc atât de craterele de impact ale Lunii, cât și de văi, deșerturi și calote glaciare polare ca ale Pământului.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">Andreiana Elena Arina, Sistemul Solar</p>
+    </footer>
+</body>
 </html>
